@@ -1,0 +1,136 @@
+/* Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f1e3; /* light warm background */
+  color: #3a2e2e; /* dark text for readability */
+  padding: 2rem;
+}
+
+/* Container for overall content */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header styling */
+header {
+  background-color: #eeb39b;
+  color: #9a4161;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  box-shadow: inset 0 -4px 5px rgba(0,0,0,0.05);
+}
+
+/* Main content styling */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Profile container */
+.profile {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f3dedc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(154, 65, 97, 0.2);
+}
+
+/* Photo container */
+.photo {
+  flex: 1;
+  max-width: 200px;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 60%;
+  box-shadow: 0 8px 15px rgba(154, 65, 97, 0.3);
+  border: 4px solid #eeb39b;
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+/* Bio container */
+.bio {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a3f3f;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #9a4161;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  color: #9a4161;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #56442b;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-top: 3px solid #9a4161;
+  margin-top: 3rem;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .photo {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .bio {
+    flex: unset;
+    margin-top: 1rem;
+  }
+}
